@@ -1,0 +1,80 @@
+.fullPage{
+    background-color: #5C6868;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.authPanel{
+    background-color: #ADA699;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 5px 10px rgb(0, 0, 0, 0.2);
+}
+.authText{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 55px;
+    color: black;
+    text-shadow: 2px 4px rgb(0, 0, 0, 0.2);
+
+}
+.inputZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 55px 0px 0px 130px;
+}
+.inputText{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 2px rgb(0, 0, 0, 0.2);
+    margin-left: 5px;
+}
+.inputInfo{
+    background-color: #F6DDDD;
+    height: 50px;
+    width: 340px;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 2px 4px rgb(0, 0, 0, 0.2);
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+}
+.buttonZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+}
+.sendLoginButton{
+    background-color: #F6DDDD;
+    height: 65px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 4px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: none;
+
+}
