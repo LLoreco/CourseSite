@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "../styles/LoginPage/loginPage.css"
 
-function LoginPanel({switchToRegister}){
+function RegistrationPanel(){
     return(
         <div className="authPanel">
-            <div className="authText">Авторизация</div>
+            <div className="authText">Регистрация</div>
             <div className="inputZone">
                 <div className="inputText">Логин</div>
                 <input className="inputInfo"></input>
@@ -19,7 +18,7 @@ function LoginPanel({switchToRegister}){
                 </button>
             </div>
             <div>
-                <button className="registrationZone" onClick={switchToRegister}>
+                <button className="registrationZone">
                     Зарегистрироваться
                 </button>
             </div>
@@ -27,4 +26,4 @@ function LoginPanel({switchToRegister}){
     )
 }
 
-export default LoginPanel
+export default RegistrationPanel

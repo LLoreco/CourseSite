@@ -60,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
 }
 .sendLoginButton{
     background-color: #F6DDDD;
@@ -76,5 +76,11 @@
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     outline: none;
-
+}
+.registrationZone{
+    all: unset;
+    color: #F6DDDD;
+    font-size: 16px;
+    margin-left: 5px;
+    text-decoration: underline;
 }

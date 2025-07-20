@@ -2,12 +2,10 @@ import { useState } from "react"
 import LoginPanel from "../../components/LoginPanel"
 import "../../styles/LoginPage/loginPage.css"
 
-const LoginPage = () => {
-
-
+const LoginPage = ({switchToRegister}) => {
     return(
         <div className="fullPage">
-            <LoginPanel />
+            <LoginPanel switchToRegister={switchToRegister}/>
         </div>
     )
 }

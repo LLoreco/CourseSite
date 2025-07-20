@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import LoginPage from './pages/Auth/LoginPage.jsx'
+import RegistrationPage from './pages/Auth/RegistrationPage.jsx'
 
 function App() {
-
+  const [isLogin, setIsLogin] = useState(true)
   return (
     <>
       <div>
-        <LoginPage />
+        {isLogin ? (
+          <LoginPage switchToRegister={()=>setIsLogin(false)}/>
+        ) : (
+          <RegistrationPage/>
+        )}
       </div>
     </>
   )
