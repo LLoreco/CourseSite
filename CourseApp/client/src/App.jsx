@@ -10,7 +10,7 @@ function App() {
         {isLogin ? (
           <LoginPage switchToRegister={()=>setIsLogin(false)}/>
         ) : (
-          <RegistrationPage/>
+          <RegistrationPage switchToLogin={()=>setIsLogin(true)}/>
         )}
       </div>
     </>

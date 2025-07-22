@@ -7,40 +7,43 @@
     align-items: center;
     margin: 0;
 }
-.authPanel{
+.registrationPanel{
     background-color: #ADA699;
-    height: 600px;
+    height: 800px;
     width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    border-radius: 5%;
+    border-radius: 30px;
     text-align: center;
-    box-shadow: 5px 10px rgb(0, 0, 0, 0.2);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
 }
-.authText{
+.registrationText{
     font-size: 48px;
     font-weight: bold;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 55px;
+    margin-top: 15px;
     color: black;
-    text-shadow: 2px 4px rgb(0, 0, 0, 0.2);
-
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.2);
 }
 .inputZone{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin: 55px 0px 0px 130px;
+    margin: 20px 0px 0px 130px;
+}
+.inputZone:first-of-type{
+    margin-top: 35px;
 }
 .inputText{
     color: black;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 1px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
     margin-left: 5px;
+    margin-bottom: 10px;
 }
 .inputInfo{
     background-color: #F6DDDD;
@@ -48,12 +51,42 @@
     width: 340px;
     border: none;
     border-radius: 45px;
-    box-shadow: 2px 4px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
     color: black;
     text-align: left;
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
     outline: none;
+}
+.roleSelector{
+    display: flex;
+    height: 50px;
+    width: 340px;
+    border-radius: 45px;
+    overflow: hidden;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #E8C4C4;
+}
+.roleButton{
+    flex: 1;
+    height: 100%;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+}
+.roleButton.active{
+    background-color: #F6DDDD;
+}
+.roleButton.inactive{
+    background-color: #ebbcbc;
+}
+.roleButton:hover{
+    background-color: #F0D0D0;
 }
 .buttonZone{
     display: flex;
@@ -62,7 +95,7 @@
     align-items: center;
     margin: 35px 0px 0px 0px;
 }
-.sendLoginButton{
+.sendRegistrationButton{
     background-color: #F6DDDD;
     height: 65px;
     width: 280px;
@@ -73,17 +106,13 @@
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     outline: none;
     cursor: pointer;
     transition: background-color 0.2s;
 }
-.registrationZone{
-    all: unset;
-    color: #F6DDDD;
-    font-size: 16px;
-    margin-left: 5px;
-    text-decoration: underline;
+.sendLoginButton:hover{
+    background-color: #E8C4C4;
 }
