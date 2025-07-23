@@ -1,5 +1,5 @@
 .fullPage{
-    background-color: #5C6868;
+    background-color: var(--background-primary);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -8,7 +8,7 @@
     margin: 0;
 }
 .registrationPanel{
-    background-color: #ADA699;
+    background-color: var(--background-secondary);
     height: 800px;
     width: 600px;
     display: flex;
@@ -46,7 +46,7 @@
     margin-bottom: 10px;
 }
 .inputInfo{
-    background-color: #F6DDDD;
+    background-color: white;
     height: 50px;
     width: 340px;
     border: none;
@@ -65,7 +65,7 @@
     border-radius: 45px;
     overflow: hidden;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #E8C4C4;
+    background-color: var(--background-inactiveButton);;
 }
 .roleButton{
     flex: 1;
@@ -80,13 +80,13 @@
     transition: background-color 0.2s;
 }
 .roleButton.active{
-    background-color: #F6DDDD;
+    background-color: var(--background-other);
 }
 .roleButton.inactive{
-    background-color: #ebbcbc;
+    background-color: var(--background-inactiveButton);
 }
 .roleButton:hover{
-    background-color: #F0D0D0;
+    background-color: var(--backround-hoverButton);
 }
 .buttonZone{
     display: flex;
@@ -96,7 +96,7 @@
     margin: 35px 0px 0px 0px;
 }
 .sendRegistrationButton{
-    background-color: #F6DDDD;
+    background-color: var(--background-other);
     height: 65px;
     width: 280px;
     border-radius: 30px;
@@ -113,6 +113,6 @@
     cursor: pointer;
     transition: background-color 0.2s;
 }
-.sendLoginButton:hover{
-    background-color: #E8C4C4;
+.sendRegistrationButton:hover{
+    background-color: var(--backround-hoverButton);
 }

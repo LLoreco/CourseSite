@@ -1,5 +1,5 @@
 .fullPage{
-    background-color: #5C6868;
+    background-color: var(--background-primary);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -8,7 +8,7 @@
     margin: 0;
 }
 .authPanel{
-    background-color: #ADA699;
+    background-color: var(--background-secondary);
     height: 600px;
     width: 600px;
     display: flex;
@@ -43,7 +43,7 @@
     margin-left: 5px;
 }
 .inputInfo{
-    background-color: #F6DDDD;
+    background-color: white;
     height: 50px;
     width: 340px;
     border: none;
@@ -63,7 +63,7 @@
     margin: 35px 0px 0px 0px;
 }
 .sendLoginButton{
-    background-color: #F6DDDD;
+    background-color: var(--background-other);
     height: 65px;
     width: 280px;
     border-radius: 30px;
@@ -80,9 +80,12 @@
     cursor: pointer;
     transition: background-color 0.2s;
 }
+.sendLoginButton:hover{
+    background-color: var(--backround-hoverButton);
+}
 .registrationZone{
     all: unset;
-    color: #F6DDDD;
+    color: black;
     font-size: 16px;
     margin-left: 5px;
     text-decoration: underline;
